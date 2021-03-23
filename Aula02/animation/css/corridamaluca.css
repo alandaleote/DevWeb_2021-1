@@ -1,3 +1,33 @@
 /*Código da animação
 A palavra "keyframes" indica que é 
 uma animação*/
+
+@keyframes iresquerda {
+    from {
+        margin-left: 700px;
+    }
+    to {
+        margin-left: 5px;
+    }
+}
+
+h1 {
+    animation-name: iresquerda;
+    animation-duration: 3s;
+}
+
+@keyframes acelera {
+    from {
+        margin-left: 0px;
+    }
+    to {
+        margin-left: 900px;
+    }
+}
+
+
+.carro {
+    width: 90px;
+    animation-name: acelera;
+    animation-duration: 8s;
+}
