@@ -1,3 +1,37 @@
 /*Código da animação
 A palavra "keyframes" indica que é 
 uma animação*/
+@keyframes move {
+    0% {
+        margin: 0;
+    }
+    30% {
+        background-color: lightcoral;
+        margin-left: 450px;
+        margin-top: 0;
+    }
+    60% {
+        background-color: lightcyan;
+        margin-left: 700px;
+        margin-top: 400px;
+    }
+    100% {
+        background-color: magenta;
+        margin-left: 300px;
+        margin-top: 700px;
+    }
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+#box {
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+    animation: move 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}

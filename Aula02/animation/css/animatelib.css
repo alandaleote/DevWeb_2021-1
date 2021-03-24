@@ -1,0 +1,11 @@
+.container {
+    text-align: center;
+    padding-top: 50px;
+    width: 500px;
+    height: 250px;
+    margin: 50px auto;
+    border-radius: 20px;
+    background-color: orchid;
+    animation: rubberBand 2s;
+    animation-iteration-count: infinite;
+}

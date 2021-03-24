@@ -1,6 +1,5 @@
 /*Código da animação
-A palavra "keyframes" indica que é 
-uma animação*/
+A palavra "keyframes" indica que é uma animação*/
 
 @keyframes iresquerda {
     from {
@@ -28,6 +27,6 @@ h1 {
 
 .carro {
     width: 90px;
-    animation-name: acelera;
+    animation-name: iresquerda;
     animation-duration: 8s;
 }
