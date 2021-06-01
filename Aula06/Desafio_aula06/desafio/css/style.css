@@ -1,0 +1,215 @@
+body,
+ul, 
+li, 
+p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    list-style: none;
+    color: #333;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+h1 {
+    color: #FFF;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0;
+    padding: 15px;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 3px;
+}
+
+header {
+    background-color: #222;
+    padding-top: 10px;
+    align-items: center;
+}
+
+#logo img {
+    max-height: 140px;
+}
+
+nav {
+    background-color: #222;
+    width: 100%;
+}
+
+#nav-logo img {
+    display: none;
+}
+
+.menu li {
+    margin-left: 5px;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+    border-bottom: 3px solid #222;
+}
+
+.menu li a:hover {
+    border-bottom: 3px solid #FF0000;
+}
+
+/* Banner Full */
+.full-banner {
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 280px;
+    padding: 0;
+}
+
+section.full-banner {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#galeria {
+    text-align: center;
+    margin: 40px 0 10px 0;
+    padding-top: 20px;
+}
+
+section.galeria {
+    width: 100%;
+}
+
+.galeria div {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #222;
+    margin-top: 30px;
+    padding: 30px 20px;
+}
+
+footer p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #999;
+}
+
+@media only screen and (min-width: 480px) {
+    nav ul.menu:after{
+        content: "";
+        clear: both;
+        display: block;
+    }
+
+    nav ul.menu li{
+        float: right;
+        width: 32%;
+    }
+
+    nav {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 99;
+    }
+
+    #galeria {
+        margin: 20px;
+        padding-top: 70px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body,
+    ul, 
+    li, 
+    p {
+        font-size: 1rem;
+    }
+
+    #logo img {
+        display: none;
+    }
+
+    #nav-logo img {
+        display: flex;
+    }
+
+    #nav-logo img {
+        width: 160px;
+        float: left;
+        margin: 0 20px 10px;
+    }
+
+    nav ul.menu li{
+        float: right;
+        width: 140px;
+        margin-top: 10px;
+    }
+
+    h1 {
+        text-align: right;
+        padding: 10px 25px;
+
+    }
+
+    .full-banner {
+        min-height: 400px;
+    }
+
+    #galeria {
+        padding-top: 95px;
+    }
+
+    section.galeria{
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    section.galeria div {
+        margin: 10px;
+        width: 350px;
+        transition: transform 3s;
+    }
+
+    section.galeria div:hover {
+        width: 100%;
+        transform: scale(1.3);
+    }
+
+    footer p {
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .full-banner {
+        height: 700px;
+    }
+
+    section.galeria div {
+        margin: 20px;
+        width: 450px;
+    }    
+}
+
+@media only screen and (min-width: 1440px) {
+    section.galeria div {
+        width: 550px;
+    }
+    
+}
